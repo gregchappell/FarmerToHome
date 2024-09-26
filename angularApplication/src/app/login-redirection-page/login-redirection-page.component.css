@@ -1,0 +1,75 @@
+html {
+    background:url("https://images.pexels.com/photos/2594828/pexels-photo-2594828.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-size: cover;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+.login1 {
+
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 30pt;
+    text-align: center;
+}
+.buylog {
+    color: rgb(126, 20, 20);
+}
+.buylog:hover {
+    color: white;
+}
+
+.buyreg{
+    color: rgb(126, 20, 20);
+}
+.buyreg:hover {
+    color: white;
+}
+.buydet{
+    color: rgb(126, 20, 20);
+}
+.buydet:hover {
+    color: white;
+}
+.selllog {
+    color: rgb(126, 20, 20);
+}
+.selllog:hover {
+    color: white;
+}
+.sellreg{
+    color: rgb(126, 20, 20);
+}
+.sellreg:hover {
+    color: white;
+}
+.selldet{
+    color: rgb(126, 20, 20);
+}
+.selldet:hover {
+    color: white;
+}
+
+.jumbotron {
+    content: "";
+    font-family: 'Pacifico', cursive;
+    border-radius: 1rem;
+    background-color: white;
+    width:1025px;
+    max-width: 100%;
+}
+
+.subtitle {
+    font-family: 'Prata', serif;
+}
+
+.btn-lg {
+    padding: 7px 7px;
+    font-size: 25px;
+    border-radius: 5px;
+    width:40%;
+    margin:5px
+}
+

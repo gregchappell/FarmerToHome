@@ -1,0 +1,109 @@
+<br>
+<br>
+<br>
+<br>
+<div class="sellertitle">
+        <p>Welcome {{firstName}}!</p></div>
+        <div class="sellersub">
+                <p>This is your Buyer profile</p></div>
+<br>
+<br>
+    <div class="container">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="card card-signin my-5">
+                  <div class="card-body">
+
+                        <table width=100%>
+                            <th>Number: </th>
+                                <td>{{consno}}</td>
+<br>
+    
+                                <td>
+                                    <button (click)="toggleEdits()" 
+                                            class="btn btn-lg btn-primary btn-block text-uppercase">
+                                                {{isEditable?"Save":"Edit"}}
+                                    </button>
+                                </td>
+<br>
+<br>
+                            <tr>
+                            <th>First Name: </th>
+                                <td *ngIf="!isEditable">{{firstName}}</td>
+                                <td *ngIf="isEditable">
+                                    <div class="form-group">
+                                        <input [(ngModel)]="firstName"
+                                                #inputEfirstName="ngModel"
+                                                minlength="6"
+                                                maxlength="45"
+                                                required autofocus
+                                                class="form-control">
+            
+                                            <span
+                                                [hidden]="inputEfirstName.valid || inputEfirstName.pristine"
+                                                class="alert alert-danger">
+                                                    Name Should Not Be Less Than 6 Characters
+                                            </span>
+                                    </div>
+                                </td>
+                            </tr>
+<br>
+                            <tr>
+                            <th>Last Name: </th>
+                                <td *ngIf="!isEditable">{{lastName}}</td>
+                                <td *ngIf="isEditable">
+                                    <div class="form-group">
+                                        <input [(ngModel)]="lastName"
+                                                #inputElastName="ngModel"
+                                                minlength="6"
+                                                maxlength="45"
+                                                required autofocus 
+                                                class="form-control">
+            
+                                            <span
+                                                [hidden]="inputElastName.valid || inputElastName.pristine"
+                                                class="alert alert-danger">
+                                                    Name Should Not Be Less Than 6 Characters
+                                                </span>
+                                    </div>
+                                </td>
+                            </tr>
+<br>
+                            <tr>
+                            <th>Address: </th>
+                                <td *ngIf="!isEditable">{{address}}</td>
+                                <td *ngIf="isEditable">
+                                    <input [(ngModel)]="address" 
+                                            class="form-control" 
+                                            required autofocus>
+                                </td>
+                            </tr>
+<br>
+                            <tr>
+                            <th>Email: </th>
+                                <td *ngIf="!isEditable">{{email}}</td>
+                                <td *ngIf="isEditable">
+                                    <input [(ngModel)]="email" 
+                                            class="form-control" 
+                                            required autofocus>
+                                </td>
+                            </tr>
+<br>
+                            <tr>
+                            <th>Phone Number: </th>
+                                <td *ngIf="!isEditable">{{phone}}</td>
+                                <td *ngIf="isEditable">
+                                    <input [(ngModel)]="phone" 
+                                            class="form-control" 
+                                            required autofocus>
+                                </td>
+                            </tr>
+    
+
+    
+                        </table>
+<br>
+                </div>
+            </div>
+        </div>
+    </div>
+

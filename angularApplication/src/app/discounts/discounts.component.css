@@ -1,0 +1,40 @@
+/* background */
+html {
+    background:url("https://images.pexels.com/photos/811109/pexels-photo-811109.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+
+.title-fruit {
+    font-family: 'Prata', cursive;
+    color: rgb(163, 10, 10); 
+    font-size: 60pt;
+    text-align: center;
+}
+
+
+.table {
+    font-size: 15px;
+}
+
+.subtitle {
+    font-family: 'Boogaloo', cursive;
+    font-size: 30px;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  
+#pag {
+    margin-top: 0%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 0%;
+}

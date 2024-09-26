@@ -1,0 +1,56 @@
+<p>FARMER LOG IN</p>
+
+<table>
+    
+    <!--FARMERID ROW-->
+    <tr>
+        <td>FarmerID: </td>
+        <td>{{farmerID}}</td>
+    </tr>
+
+    <!--FARMER NAME ROW-->
+    <tr>
+        <td>FarmerName: </td>
+        <td>{{farmerName}}</td>
+        <td><input [(ngModel)]="farmerName" name="farmerName" placeholder="name" #fName></td>
+        <!-- <td>
+            <div>
+                <input [(ngModel)] = "farmerName"
+                #inputName="ngModel"
+                minlength="6"
+                maxlength="25"></div></td> -->
+    </tr>
+
+    <!--FARMER PRODUCTS DESCRIPTION ROW-->
+    <tr>
+        <td>FarmerProducts: </td>
+        <td>{{products}}</td>
+        <td><input [(ngModel)]="products" name="farmerProducts" placeholder="products" #fprods></td>
+        <!-- <td>
+            <div>
+                <input [(ngModel)] = "products"
+                #inputName="ngModel"
+                minlength="10"
+                maxlength="100"></div></td>     -->
+    </tr>
+
+    <!-- FARMER LOCATION ROW-->
+    <tr>
+        <td>FarmerLocation: </td>
+        <td>{{farmLocation}}</td>
+
+        <td><input [(ngModel)]="farmLocation" name="farmerLocation" placeholder="location" #flocation></td>
+        <!-- <td>
+            <div>
+                <input [(ngModel)] = "farmLocation"
+                #inputName="ngModel"
+                minlength="5"
+                maxlength="25"></div></td> -->
+    </tr>
+
+    <tr>
+        <td>
+            <button (click)="registerFarmerDetails()">Register</button>
+        </td>
+    </tr>
+ </table>

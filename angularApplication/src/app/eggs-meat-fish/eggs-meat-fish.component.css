@@ -1,0 +1,29 @@
+html {
+    background:url("https://images.pexels.com/photos/600615/pexels-photo-600615.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position: center center;
+      /* Background image doesn't tile */
+    background-repeat: no-repeat;
+        /* Background image is fixed in the viewport so that it doesn't move when 
+       the content's height is greater than the image's height */
+    background-attachment: fixed;
+        /* This is what makes the background image rescale based
+       on the container's size */
+    background-size: cover;
+}
+.title-egg {
+    font-family: 'Prata', serif;
+    color: white; 
+    font-size: 6vw;
+    font-size: 60pt;
+    text-align: center;
+}
+.table {
+    font-size: 15px;
+}
+
+
+#pag {
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+}

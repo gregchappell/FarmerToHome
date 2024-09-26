@@ -1,0 +1,70 @@
+html {
+  background:url("https://images.pexels.com/photos/558376/pexels-photo-558376.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-position: center center;
+    /* Background image doesn't tile */
+  background-repeat: no-repeat;
+      /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+      /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+}
+
+.jumbotron {
+  background-color: transparent;
+}
+.home {
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;     
+}
+.est {
+  font-family: 'Prata', serif;
+  color: white;
+  font-size:2vw;
+  text-align: left;
+  padding-left: 22ch;
+}
+.title-home {
+  font-family: 'Prata', serif;
+  color: white;
+  font-size:6vw;
+  text-align: center;
+}
+.home-subheading {
+  font-family: 'Prata', serif;
+  color: white;
+  font-size: 2vw;
+  text-align: left;
+  padding-left: 22ch;   
+}
+
+.jumbotron {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(170, 170, 170);
+  font-size: 20px;
+  
+
+  /* border-radius: 1rem; */
+
+  padding:1rem;
+  border:1px;
+}
+
+.pagination a {
+  border-radius: 5px;
+}
+
+.table {
+  font-size: 15px;
+}
+
+#search-bar {
+  width: 50%;
+  border-radius: 1rem;  
+}
+
+#search-bar a:hover {
+  background-color: #eee;
+}

@@ -1,0 +1,53 @@
+<<<<<<< HEAD
+C:\Users\joseph61166\git\Java project\FarmerToHome\src\main\java\com\example\farmerHome\repositories\ConsumerRepository.java
+C:\Users\joseph61166\git\Java project\FarmerToHome\src\main\java\com\example\farmerHome\apis\FarmerService.java
+C:\Users\joseph61166\git\Java project\FarmerToHome\src\main\java\com\example\farmerHome\apis\BasketService.java
+C:\Users\joseph61166\git\Java project\FarmerToHome\src\main\java\com\example\farmerHome\apis\ConsumerService.java
+C:\Users\joseph61166\git\Java project\FarmerToHome\src\main\java\com\example\farmerHome\apis\ProductService.java
+C:\Users\joseph61166\git\Java project\FarmerToHome\src\main\java\com\example\farmerHome\repositories\BasketRepository.java
+C:\Users\joseph61166\git\Java project\FarmerToHome\src\main\java\com\example\farmerHome\apis\CORSFilter.java
+C:\Users\joseph61166\git\Java project\FarmerToHome\src\main\java\com\example\farmerHome\entities\ConsumerLifecycleListener.java
+C:\Users\joseph61166\git\Java project\FarmerToHome\src\main\java\com\example\farmerHome\entities\ProductSizes.java
+C:\Users\joseph61166\git\Java project\FarmerToHome\src\main\java\com\example\farmerHome\entities\FarmerLifecycleListener.java
+C:\Users\joseph61166\git\Java project\FarmerToHome\src\main\java\com\example\farmerHome\repositories\ProductRepository.java
+C:\Users\joseph61166\git\Java project\FarmerToHome\src\main\java\com\example\farmerHome\entities\Consumer.java
+C:\Users\joseph61166\git\Java project\FarmerToHome\src\main\java\com\example\farmerHome\repositories\FarmerRepository.java
+C:\Users\joseph61166\git\Java project\FarmerToHome\src\main\java\com\example\farmerHome\entities\Category.java
+C:\Users\joseph61166\git\Java project\FarmerToHome\src\main\java\com\example\farmerHome\entities\ProductLifecycleListener.java
+C:\Users\joseph61166\git\Java project\FarmerToHome\src\main\java\com\example\farmerHome\entities\BasketLifecycleListener.java
+C:\Users\joseph61166\git\Java project\FarmerToHome\src\main\java\com\example\farmerHome\entities\Farmer.java
+C:\Users\joseph61166\git\Java project\FarmerToHome\src\main\java\com\example\farmerHome\entities\Product.java
+C:\Users\joseph61166\git\Java project\FarmerToHome\src\main\java\com\example\farmerHome\entities\Basket.java
+C:\Users\joseph61166\git\Java project\FarmerToHome\src\main\java\com\example\farmerHome\FarmerHomeApplication.java
+C:\Users\joseph61166\git\Java project\FarmerToHome\src\main\java\com\example\farmerHome\entities\CategoryLifecycleListener.java
+C:\Users\joseph61166\git\Java project\FarmerToHome\src\main\java\com\example\farmerHome\apis\CategoryService.java
+C:\Users\joseph61166\git\Java project\FarmerToHome\src\main\java\com\example\farmerHome\apis\APIConfig.java
+C:\Users\joseph61166\git\Java project\FarmerToHome\src\main\java\com\example\farmerHome\repositories\CategoryRepository.java
+=======
+C:\Users\joseph61166\git\Java project\FarmerToHome - new\src\main\java\com\example\farmerHome\apis\APIConfig.java
+C:\Users\joseph61166\git\Java project\FarmerToHome - new\src\main\java\com\example\farmerHome\entities\BasketLifecycleListener.java
+C:\Users\joseph61166\git\Java project\FarmerToHome - new\src\main\java\com\example\farmerHome\entities\Order.java
+C:\Users\joseph61166\git\Java project\FarmerToHome - new\src\main\java\com\example\farmerHome\repositories\ConsumerRepository.java
+C:\Users\joseph61166\git\Java project\FarmerToHome - new\src\main\java\com\example\farmerHome\apis\FarmerService.java
+C:\Users\joseph61166\git\Java project\FarmerToHome - new\src\main\java\com\example\farmerHome\entities\Consumer.java
+C:\Users\joseph61166\git\Java project\FarmerToHome - new\src\main\java\com\example\farmerHome\apis\ConsumerService.java
+C:\Users\joseph61166\git\Java project\FarmerToHome - new\src\main\java\com\example\farmerHome\entities\Farmer.java
+C:\Users\joseph61166\git\Java project\FarmerToHome - new\src\main\java\com\example\farmerHome\apis\CategoryService.java
+C:\Users\joseph61166\git\Java project\FarmerToHome - new\src\main\java\com\example\farmerHome\entities\CategoryLifecycleListener.java
+C:\Users\joseph61166\git\Java project\FarmerToHome - new\src\main\java\com\example\farmerHome\apis\ProductService.java
+C:\Users\joseph61166\git\Java project\FarmerToHome - new\src\main\java\com\example\farmerHome\entities\ProductLifecycleListener.java
+C:\Users\joseph61166\git\Java project\FarmerToHome - new\src\main\java\com\example\farmerHome\repositories\ProductRepository.java
+C:\Users\joseph61166\git\Java project\FarmerToHome - new\src\main\java\com\example\farmerHome\entities\Product.java
+C:\Users\joseph61166\git\Java project\FarmerToHome - new\src\main\java\com\example\farmerHome\entities\Category.java
+C:\Users\joseph61166\git\Java project\FarmerToHome - new\src\main\java\com\example\farmerHome\repositories\BasketRepository.java
+C:\Users\joseph61166\git\Java project\FarmerToHome - new\src\main\java\com\example\farmerHome\apis\OrderService.java
+C:\Users\joseph61166\git\Java project\FarmerToHome - new\src\main\java\com\example\farmerHome\FarmerHomeApplication.java
+C:\Users\joseph61166\git\Java project\FarmerToHome - new\src\main\java\com\example\farmerHome\repositories\FarmerRepository.java
+C:\Users\joseph61166\git\Java project\FarmerToHome - new\src\main\java\com\example\farmerHome\apis\BasketService.java
+C:\Users\joseph61166\git\Java project\FarmerToHome - new\src\main\java\com\example\farmerHome\entities\Basket.java
+C:\Users\joseph61166\git\Java project\FarmerToHome - new\src\main\java\com\example\farmerHome\entities\ConsumerLifecycleListener.java
+C:\Users\joseph61166\git\Java project\FarmerToHome - new\src\main\java\com\example\farmerHome\apis\CORSFilter.java
+C:\Users\joseph61166\git\Java project\FarmerToHome - new\src\main\java\com\example\farmerHome\entities\FarmerLifecycleListener.java
+C:\Users\joseph61166\git\Java project\FarmerToHome - new\src\main\java\com\example\farmerHome\repositories\OrderRepository.java
+C:\Users\joseph61166\git\Java project\FarmerToHome - new\src\main\java\com\example\farmerHome\repositories\CategoryRepository.java
+>>>>>>> 397aa77fe8cc7abafb8165af212f3e4afc942b6b

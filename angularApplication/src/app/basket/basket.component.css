@@ -1,0 +1,63 @@
+/* background */
+html {
+    background:url("https://images.pexels.com/photos/616404/pexels-photo-616404.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-position: center center;
+      /* Background image doesn't tile */
+    background-repeat: no-repeat;
+        /* Background image is fixed in the viewport so that it doesn't move when 
+       the content's height is greater than the image's height */
+    background-attachment: fixed;
+        /* This is what makes the background image rescale based
+       on the container's size */
+    background-size: cover;
+}
+
+.title-basket {	
+    font-family: 'Prata', serif;	
+    color: rgba(0, 0, 0, 0.527); 
+    font-size: 6vw;
+	text-align: center;
+	border-radius: 1rem;
+}
+
+/* bootstrap table */
+.table>tbody>tr>td, .table>tfoot>tr>td{
+    vertical-align: middle;
+}
+@media screen and (max-width: 600px) {
+    table#cart tbody td .form-control{
+		
+		display: inline !important;
+		
+	}
+	.actions .btn{
+		width:36%;
+		margin:1.5em 0;
+	}
+	
+	.actions .btn-info{
+		float:left;
+	}
+	.actions .btn-danger{
+		float:right;
+	}
+	
+	table#cart thead { display: none; }
+	table#cart tbody td { display: block; padding: .6rem; min-width:320px;}
+	table#cart tbody tr td:first-child { background: #333; color: #fff; }
+	table#cart tbody td:before {
+		content: attr(data-th); font-weight: bold;
+		display: inline-block; width: 8rem;
+		
+	}
+	
+	
+	
+	table#cart tfoot td{display:block; }
+	table#cart tfoot td .btn{display:block;}
+	
+	}
+
+	.table {
+		border-radius: 0.5rem; 
+	}

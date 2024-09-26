@@ -1,0 +1,34 @@
+.navbar {
+  padding: 0%;  
+  border: 0ch;
+}
+
+.navbar ul.navbar-nav {
+    position: relative;
+    float: none;
+    width: 100%;
+    padding: 0%;
+    
+    
+  }
+  .navbar ul.navbar-nav li {
+    width: 100%;
+    position: relative;
+    text-align: center;
+  }
+
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    font-size: 90%;  
+    width: 100%;
+   
+}
+
+.navbar a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.table {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}

@@ -1,0 +1,50 @@
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  
+.jumbotron {
+    background:url("https://images.pexels.com/photos/558376/pexels-photo-558376.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    border-radius: 0%;
+}
+.home {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;     
+}
+.est {
+    font-family: 'Prata', serif;
+    color: white;
+    font-size: 2vw;
+    text-align: left;
+    padding-left: 22ch;
+}
+.title-home {
+    font-family: 'Prata', serif;
+    color: white;
+    font-size:6vw;
+    text-align: center;
+}
+.home-subheading {
+    font-family: 'Prata', serif;
+    color: white;
+    font-size: 1.7vw;
+    text-align: center;
+    
+}
+
+.jumbotron {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(170, 170, 170);
+    font-size: 20px;
+
+}

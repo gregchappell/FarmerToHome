@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.example.farmerHome.ProductApplicationTest
+-------------------------------------------------------------------------------
+<<<<<<< HEAD
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.511 s - in com.example.farmerHome.ProductApplicationTest
+=======
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in com.example.farmerHome.ProductApplicationTest
+>>>>>>> 397aa77fe8cc7abafb8165af212f3e4afc942b6b

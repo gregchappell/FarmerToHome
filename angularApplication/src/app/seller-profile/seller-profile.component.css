@@ -1,0 +1,30 @@
+
+html {
+    background:url("https://images.pexels.com/photos/767240/pexels-photo-767240.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position: center center;
+      /* Background image doesn't tile */
+    background-repeat: no-repeat;
+        /* Background image is fixed in the viewport so that it doesn't move when 
+       the content's height is greater than the image's height */
+    background-attachment: fixed;
+        /* This is what makes the background image rescale based
+       on the container's size */
+    background-size: cover;
+}
+
+#editbutton {
+  width: 100%;  
+}
+
+.sellertitle {
+  font-family: 'Pacifico', cursive;
+  color: rgb(0, 0, 0);
+  font-size:6vw;
+  text-align: center;
+}
+.sellersub {
+  font-family: 'Pacifico', cursive;
+  color: rgb(0, 0, 0);
+  font-size:2vw;
+  text-align: center;
+}

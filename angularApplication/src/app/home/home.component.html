@@ -1,0 +1,72 @@
+<html>
+<br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="jumbotron">
+    <div id="firstJBox">
+        <div class="home">
+            <div class="est">
+                <p>Est. 2019</p>
+            </div>
+
+            <div class="title-home">
+                <p><b>FARM TO HOME</b></p>
+            </div>
+
+            <div class="home-subheading">
+                <p>Premium quality goods.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br><br><br><br><br><br>
+
+
+
+<div class="jumbotron jumbotron-fluid bg-dark">Search for item: 
+    <input id="search-bar" 
+            type="text" 
+            [(ngModel)]="term">
+            <br>
+
+<br>
+
+    <table class="table table-dark">
+<br>
+        <tr>    
+            <td>NAME</td>
+            <td>PRICE</td>
+            <td>EXPIRY</td>
+            <td>AMOUNT</td>
+            <td>ADD TO BASKET</td>
+            <td>DELETE</td>
+
+        </tr>
+        <tr *ngFor ="let p of products|filter:term |paginate: {itemsPerPage:10, currentPage:p}; let i = index">
+            
+            
+            <td>{{p.product_name}}</td>
+            <td>{{p.price}}</td>
+            <td>{{p.expiry_date}}</td>
+            <!-- <td *ngFor = "let a of currentOrder">
+                <p *ngIf = "p.productId == a.product.productId" >{{a.quantity}}</p>
+            </td> -->
+            <!-- <td>{{quantity.value}}</td> -->
+            <td>
+                <input type="number" min="1" max="24" value= "1" #quantity>
+            </td>
+            
+           
+            <td><button class="btn btn-success" (click) = "addQuantity(p.productId, quantity.value)">+</button></td>
+
+            <td><button class="btn btn-danger" (click) = "deleteProducts(p.productId)">x</button></td>
+
+        </tr>
+    </table>
+
+
+    <div class="pagination">
+        <pagination-controls (pageChange)="p =$event"></pagination-controls>
+    </div>
+</div>
+</html>

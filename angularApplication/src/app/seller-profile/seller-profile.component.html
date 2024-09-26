@@ -1,0 +1,202 @@
+<br>
+<br>
+<br>
+<br>
+<div class="sellertitle">
+<p>Welcome {{firstName}}!</p></div>
+<div class="sellersub">
+        <p>This is your Seller profile</p></div>
+    <div class="container">
+        <div class="col-sm-20 col-md-20 col-lg-20 mx-auto">
+                <div class="card" style="width: ;">
+                  <div class="card-body">
+
+                        <table class="table table lined">
+                        <tr>
+                            <th>First Name: </th>
+                                <td *ngIf="!isEditable">{{firstName}}</td>
+                                <td *ngIf="isEditable">
+                                <div class="form-group">
+                                    <input [(ngModel)]="firstName"
+                                    #inputEfirstName="ngModel"
+                                    minlength="6"
+                                    maxlength="45">
+                                <span
+                                    [hidden]="inputEfirstName.valid || inputEfirstName.pristine"
+                                    class="alert alert-danger">
+                                    Name Should Not Be Less That 6 Characters
+                                </span>
+                                </div>
+                                </td>
+                        </tr>
+<br>
+                        <tr>
+                            <th>Last Name: </th>
+                                <td *ngIf="!isEditable">{{lastName}}</td>
+                                <td *ngIf="isEditable">
+                                <div class="form-group">
+                                    <input [(ngModel)]="lastName"
+                                        #inputElastName="ngModel"
+                                        minlength="3"
+                                        maxlength="45">
+                                    <span
+                                        [hidden]="inputElastName.valid || inputElastName.pristine"
+                                        class="alert alert-danger">
+                                        Name Should Not Be Less That 3 Characters
+                                    </span>
+                                </div>
+                                </td>
+                        </tr>
+<br>
+                        <tr>
+                            <th>Email: </th>
+                                <td *ngIf="!isEditable">{{email}}</td>
+                                <td *ngIf="isEditable">
+                                    <input [(ngModel)]="email"> 
+                                </td>
+                        </tr>
+<br>
+                        <tr>
+                            <th>Address: </th>
+                                <td *ngIf="!isEditable">{{address}}</td>
+                                <td *ngIf="isEditable">
+                                    <input [(ngModel)]="address">
+                                </td>
+                        </tr>
+<br>
+                        <tr>
+                            <th>Phone: </th>
+                                <td *ngIf="!isEditable">{{phone}}</td>
+                                <td *ngIf="isEditable">
+                                    <input [(ngModel)]="phone">
+                                </td>
+                        </tr>
+<br>
+                        <tr>
+                            <th>Username: </th>
+                                <td *ngIf="!isEditable">{{farmerUsername}}</td>
+                                <td *ngIf="isEditable">
+                                    <input [(ngModel)]="farmerUsername">
+                                </td>
+                        </tr> 
+<br>
+                        <tr>
+                                
+                            <td>
+                                    Need to edit your details?   <button 
+                                        (click)="toggleEdits()" 
+                                        class="btn btn-sm btn-primary btn-block text-uppercase" id="editbutton"
+                                        type="button">
+                                            {{isEditable?"Save":"Edit"}}
+                                    </button>
+                                </td>
+                        </tr>
+<br>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<h2>Products</h2>
+
+<div class="container">
+    <div class="card card-signin my-5">
+        <div class="card-body">
+                        
+            <table width=90% align="center">
+                <tr>
+                    <!-- <th>Number</th> -->
+                    <th>Name</th>
+                    <!-- <th>Category</th> -->
+                    <!-- <th>Size</th> -->
+                    <th>Expiry Date</th>
+                    <th>Price</th>
+                    <th>Index</th>
+                    <th>
+                        <button (click)="showProductForm()" 
+                                class="btn btn-lg btn-primary btn-block text-uppercase">
+                                +
+                        </button>
+                    </th>
+                </tr>
+                <tr *ngFor="let a of farmerProds; let i = index">
+                    <!-- <td>{{a.productId}}</td> -->
+                    <td>{{a.product_name}}</td>
+                    <!-- <td>{{a.currentCategory}}</td> -->
+                    <!-- <td>{{a.size}}</td> -->
+                    <td>{{a.expiry_date}}</td>
+                    <td>{{a.price}}</td>
+                    <!-- <td>{{a.quantity}}</td> -->
+                    <td>{{i+1}}</td>
+                    <td>
+                        <button (click)="deleteProduct(i)" 
+                                class="btn btn-lg btn-danger btn-block text-lowercase"
+                                type="button">
+                                X
+                        </button>
+                    </td>
+                </tr>
+
+            </table>
+<br>
+
+            <form *ngIf="isProductFormVisable"
+                    (submit) = "assignNewProduct()">
+                <table>
+                    <tr>
+                            <!-- <th>product Id: </th>
+                            <td *ngIf="!isProductFormVisable">{{product.productId}}</td>
+                            <td *ngIf="isProductFormVisable">
+                                <input [(ngModel)]="productId" name="productId" #pid> -->
+                            <th>Name: </th>
+                            <td *ngIf="!isProductFormVisable">{{product.product_name}}</td>
+                            <td *ngIf="isProductFormVisable">
+                                <input [(ngModel)]="product_name" 
+                                        name="pname" 
+                                        #pname>
+                            </td>
+                            <th>Expiry Date: </th>
+                            <td *ngIf="!isProductFormVisable">{{product.expiry_date}}</td>
+                            <td *ngIf="isProductFormVisable">
+                                <input [(ngModel)]="expiry_date" 
+                                        name="pexpiryDate" 
+                                        #pexpiryDate>
+                            </td>
+                            <th>Price: </th>
+                            <td *ngIf="!isProductFormVisable">{{product.price}}</td>
+                            <td *ngIf="isProductFormVisable">
+                                <input [(ngModel)]="price" 
+                                        name="pprice" 
+                                        #pprice>
+                            </td>
+                        <!-- <td>
+                            <select name="productId" #selectProductId (change)="updateSelectedProductId(selectProductId.value)">
+                                <option *ngFor="let p of farmerProds"
+                                        value="{{p.productId}}">
+                                            {{p.productId}}::{{p.product_name}}
+                                </option>
+                            </select>
+                        </td> -->
+                        
+                        
+                        <td>
+                            <button value="Add" 
+                                    (click)="registerNewProduct(pid, pname, pexpiryDate, pprice)" 
+                                    class="btn btn-sm btn-secondary btn-block text-uppercase"
+                                    type="button">
+                                    Add
+                            </button>
+                        </td>
+                        <td>
+                            <div [hidden]="isProductFormValid">
+                                    {{invalidFormMessage}}
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
